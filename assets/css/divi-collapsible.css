@@ -1,0 +1,118 @@
+/**
+ * Divi Collapsible Mobile Menu Styles
+ *
+ * @package DiviCollapsible
+ */
+
+/*Style the icon's placeholder*/
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+ul.et_mobile_menu li.page_item_has_children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.page_item_has_children .mobile-toggle {
+    width: 44px;
+    height: 100%;
+    padding: 0px !important;
+    max-height: 44px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 999;
+    background-color: transparent;
+    border-bottom: 0;
+    text-align: center;
+}
+
+ul.et_mobile_menu>li.menu-item-has-children,
+ul.et_mobile_menu>li.page_item_has_children,
+ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.page_item_has_children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children {
+    position: relative;
+}
+
+.et_mobile_menu .menu-item-has-children>a,
+.et-db #et-boc .et-l .et_mobile_menu .menu-item-has-children>a {
+    background-color: transparent;
+}
+
+/*Hide the Sub-menu*/
+ul.et_mobile_menu .menu-item-has-children .sub-menu,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu {
+    display: block !important;
+    visibility: visible !important;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/*Show the sub-menu when the + icon is clicked*/
+ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible {
+    max-height: 1000px;
+    /* Large enough to accommodate most submenus */
+    opacity: 1;
+}
+
+/*Create the opening/closing icon using the SVG Icons*/
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle .dt-icons,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle .dt-icons {
+    position: relative;
+}
+
+/*Hide the closing icon if the sub-menu is not open*/
+ul.et_mobile_menu li.menu-item-has-children:not(.dt-open) .mobile-toggle .dt-close-icon,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children:not(.dt-open) .mobile-toggle .dt-close-icon {
+    display: none;
+}
+
+/*Hide the opening icon if the sub-menu is open*/
+ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle .dt-open-icon,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle .dt-open-icon {
+    display: none;
+}
+
+/* Hover state styling */
+ul.et_mobile_menu li.menu-item-has-children.is-hover>.mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children.is-hover>.mobile-toggle {
+    opacity: 0.8;
+}
+
+/* Animation for menu transitions */
+ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu {
+    transition: max-height 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    will-change: max-height, opacity;
+}
+
+/* Improved accessibility */
+.mobile-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-toggle:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.mobile-toggle:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.mobile-toggle:focus-visible {
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 2px rgba(46, 163, 242, 0.3);
+}
+
+/* SVG icon styling */
+.dt-icons {
+    width: 16px;
+    height: 16px;
+    fill: #2ea3f2;
+}

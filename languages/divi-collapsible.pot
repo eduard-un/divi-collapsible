@@ -1,0 +1,39 @@
+# Copyright (C) 2025 Eduard Ungureanu
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Divi Collapsible Mobile Menu 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/divi-collapsible\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-03-28T14:22:13+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.0\n"
+"X-Domain: divi-collapsible\n"
+
+#. Plugin Name of the plugin
+msgid "Divi Collapsible Mobile Menu"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://divi.tech/plugins/divi-collapsible"
+msgstr ""
+
+#. Description of the plugin
+msgid "A WordPress plugin that adds a collapsible mobile menu to the Divi theme."
+msgstr ""
+
+#. Author of the plugin
+msgid "Eduard Ungureanu"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://divi.tech"
+msgstr ""
+
+#: assets/js/divi-collapsible.js:13
+msgid "toggle sub menu"
+msgstr ""

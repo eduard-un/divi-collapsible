@@ -1,19 +1,47 @@
-# Divi Collapsible WordPress plugin
+# Divi Collapsible Mobile Menu
 
-WordPress Plugin to convert the Divi's mobile menu into a collapsible menu
+A lightweight WordPress plugin that transforms the default Divi mobile menu into a collapsible menu with enhanced functionality and accessibility.
 
-## How to use it
+## Features
+
+- Converts Divi's mobile menu into a collapsible menu structure
+- Preserves parent menu item links while adding toggle functionality
+- Clean, minimalist code with no configuration needed
+- Proper asset loading with enqueued styles and scripts
+- Accessibility improvements with ARIA attributes and keyboard navigation
+- Compatible with Divi theme and Divi Builder
+- Ultra-lightweight and optimized for performance
+
+## Installation
 
 1. Download the plugin files
-2. Upload the zip file to the WordPress website
+2. Upload the zip file to your WordPress website via Plugins > Add New > Upload Plugin
 3. Activate the plugin
+4. No configuration needed - works automatically with Divi theme
 
-## Description
+## How It Works
 
-A simple plugin that will transform the default Divi's Mobile menu into a collapsable menu while keeping usable the link of the parent menu item. The plugin once activated, will output one `<style>` tag in the Header of your website which contains all the required CSS code for the collapsible menu items and one `<script>` tag in the Footer (to avoid render blocking issues), which contains all the JS code required for this to work properply.
+The plugin adds toggle buttons to menu items that have children. When a user clicks the toggle button:
 
-The JS script, adds a new element (`<a>`) for all the menu items that have children. Inside this new elment there are two SVG icons (`+` - for opening the sub-menu, `x` - for closing the sub-menu).
+- The submenu will expand/collapse with a smooth animation
+- The toggle icon changes between plus (+) and minus (-) icons
+- The parent menu item link remains clickable
 
-Onece activated, it will convert the original Divi's Mobile menu into a Collapsible menu while preserving the parent link. The Sub Menu can be opened by clickin on the `+` icon.
+## Technical Details
 
-To close the menu, click on the `x` icon
+This plugin uses a minimalist approach for maximum performance:
+
+- Simple, efficient code structure
+- Properly enqueued CSS and JS files
+- Conditional loading only when Divi theme is active
+- No admin settings or configuration needed
+- Accessibility improvements for keyboard navigation
+
+## Browser Compatibility
+
+- Chrome, Firefox, Safari, Edge (latest versions)
+- Mobile browsers on iOS and Android
+
+## Support
+
+For support or feature requests, please visit [https://divi.tech](https://divi.tech)
