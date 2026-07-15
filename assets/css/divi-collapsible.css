@@ -4,6 +4,12 @@
  * @package DiviCollapsible
  */
 
+/*Set a max-height on the Sub-menu and make it scrollable*/
+ul.et_mobile_menu {
+	max-height: 75vh;
+	overflow-y: scroll;
+}
+
 /*Style the icon's placeholder*/
 ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
 ul.et_mobile_menu li.page_item_has_children .mobile-toggle,
