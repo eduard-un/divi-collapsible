@@ -57,7 +57,14 @@
                     if (isExpanded) {
                         const subMenuHeight = $subMenu.prop('scrollHeight');
                         $subMenu.css('max-height', subMenuHeight + 'px');
+
+                        // Let already open parent sub-menus grow with their content,
+                        // otherwise their fixed max-height clips the newly opened level
+                        $subMenu.parents('ul.children.visible, ul.sub-menu.visible').css('max-height', 'none');
                     } else {
+                        // Collapse from the real height so a 'none' max-height still animates
+                        $subMenu.css('max-height', $subMenu.prop('scrollHeight') + 'px');
+                        $subMenu.prop('offsetHeight'); // Force reflow before collapsing
                         $subMenu.css('max-height', '0');
                     }
                 }

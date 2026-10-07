@@ -3,7 +3,7 @@
  * Plugin Name: Divi Collapsible Mobile Menu
  * Plugin URI: https://divi.tech/plugins/divi-collapsible
  * Description: A WordPress plugin that adds a collapsible mobile menu to the Divi theme.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Eduard Ungureanu
  * Author URI: https://divi.tech
  * License: GPL2
@@ -30,7 +30,7 @@ class DiviCollapsible {
      *
      * @var string
      */
-    public $version = '1.1.0';
+    public $version = '1.1.1';
 
     /**
      * The single instance of the class.
